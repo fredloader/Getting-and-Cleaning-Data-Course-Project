@@ -1,8 +1,8 @@
-run_analysis.R: This is the script we will run for the course project
+run_analysis.R is the script we will run for the course project.
 
-We will be working on the dataset from the UCI Machine Learning Repository on the Human Activity Recognition Using Smartphones study: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+The datasets are from the UCI Machine Learning Repository on the Human Activity Recognition Using Smartphones study: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-  where:
+Where:
  		X_test.txt is the Test dataset
  		y_test.txt contains the Test labels (activity)
  		subject_test.txt contains the subjects who performed the activity
@@ -29,11 +29,3 @@ On lines, 89 -91, I searched for the following abbreviated terms and made descri
 On lines 95 - 101, we will create a second, independent tidy data set, tidyData, with the average of each variable for each activity and each subject and for this, we will use the "reshape2" library. We will "melt" the data set and set the Subject and Activity  columns as ID variables, then use "dcast" to get the aggregates for the mean values for each subject and each activity.
 
 On line 104, the last step is to write the "tidy" data set to a text file.
-
-
-
-
-
-
-
-
