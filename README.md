@@ -1,13 +1,5 @@
 run_analysis.R is the script we will run for the course project.
 
-The datasets are from the UCI Machine Learning Repository on the Human Activity Recognition Using Smartphones study: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
-
-Where:
- 		X_test.txt is the Test dataset
- 		y_test.txt contains the Test labels (activity)
- 		subject_test.txt contains the subjects who performed the activity
- 		features.txt contains feature information
-
 On line 11, let's read in the feature names first as we will use it for both the Test and Training sets
 
 On line 14, let's read in the test data sets X_test.txt, y_test.txt and subject_test.txt into tables with "Test" prefixes.
