@@ -1,6 +1,6 @@
-We will be working on the dataset from the UCI Machine Learning Repository on the Human Activity Recognition Using Smartphones study: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+The datasets for this course project are from the UCI Machine Learning Repository on the Human Activity Recognition Using Smartphones study: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-  where:
+Where:
  		X_test.txt is the Test dataset
  		y_test.txt contains the Test labels (activity)
  		subject_test.txt contains the subjects who performed the activity
