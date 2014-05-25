@@ -8,9 +8,9 @@ y_test.txt contains the Test labels (activity)
 subject_test.txt contains the subjects who performed the activity
 features.txt contains feature information
 
-Data Set Information:
+Data Set Information (from the UCI web site):
 
-A group of 30 volunteers with an age bracket of 19-48 years performed the experiments. Six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) were performed by each person while wearing a smartphone (Samsung Galaxy S II) on the waist. 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz were captured using its embedded accelerometer and gyroscope. To label the data manually, the experiments have been video-recorded.  70% of the volunteers was selected for generating the training data and 30% the test data for the randomly partitioned dataset.
+A group of 30 volunteers with an age bracket of 19-48 years performed the experiments. Six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) were performed by each person while wearing a smartphone (Samsung Galaxy S II) on the waist. 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz were captured using its embedded accelerometer and gyroscope. To label the data manually, the experiments have been video-recorded.  70% of the volunteers were selected for generating the training data and 30% for the test data of the randomly partitioned dataset.
 
 A pre-processing stage by applying noise filters and then sampling in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window) were applied on the sensor signals (accelerometer and gyroscope). A Butterworth low-pass filter were applied to body acceleration and gravity to separate the sensor acceleration signal, which has gravitational and body motion components. A filter with 0.3 Hz cutoff frequency was used since the gravitational force is assumed to have only low frequency components. A vector of features was obtained by calculating variables from the time and frequency domain from each window.
 
