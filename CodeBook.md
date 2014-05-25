@@ -17,6 +17,7 @@ A pre-processing stage by applying noise filters and then sampling in fixed-widt
 Code Book
 
 The Instruction List (Pseudocode)
+(run_analysis.R contains full comments on what particular sections of the script is performing)
 
 The feature names were read in first as it will be used it for both the Test and Training sets.
 
@@ -28,9 +29,11 @@ The train Subjects and Labels were combined with Train data. The first two colum
 
 Next, the training and the test sets were merged to a data set called "MyData1", column names were replaced with feature names and the first two columns were labeled as "subject" and "activity".
 
-Extractions were performed only on the mean and standard deviation for each measurement. Columns were identified that contained "mean()" and "std()".  The "search" measurement vector, sMeasure, was used with a "vectorized" version of grep that allowed to search for the columns we want: those with "mean()" and "std()". I got this idea from http://stackoverflow.com/questions/20440915/subsetting-data-frame-based-on-search-pattern-in-vector/20441800#20441800
+Column extractions were performed only on the mean and standard deviation for each measurement. Columns were identified that contained "mean()" and "std()".  The "search" measurement vector, sMeasure, was used with a "vectorized" version of grep that allowed to search for the columns we want: those with "mean()" and "std()". I got this idea from http://stackoverflow.com/questions/20440915/subsetting-data-frame-based-on-search-pattern-in-vector/20441800#20441800
 
 Upon inspection, column names with "MeanFreq()" were copied over. So, these columns were dropped. We then used descriptive activity names to name the activities in the data set ("STANDING", etc.) The ActCode (for "Activity Code") column was dropped, too, as we now have a descriptive Activity column.
+
+The merged dataset is now 68 columns, down from the original 563 columns.
 
 In order to label the data set with descriptive activity names, I searched for the following abbreviated terms and made descriptive changes: "Acc", "Mag" and "Gyro" were changed to "Acceleration", "Magnitude" and "Gyroscope"
 
