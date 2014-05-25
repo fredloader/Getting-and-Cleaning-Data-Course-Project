@@ -1,12 +1,12 @@
 The datasets for this course project are from the UCI Machine Learning Repository on the Human Activity Recognition Using Smartphones study: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
 Where:
- 		X_test.txt is the Test dataset
- 		y_test.txt contains the Test labels (activity)
- 		subject_test.txt contains the subjects who performed the activity
- 		features.txt contains feature information
+X_test.txt is the Test dataset
+y_test.txt contains the Test labels (activity)
+subject_test.txt contains the subjects who performed the activity
+features.txt contains feature information
 
-The feature names were read in first as we will use it for both the Test and Training sets
+The feature names were read in first as it will be used it for both the Test and Training sets.
 
 The test data sets X_test.txt, y_test.txt and subject_test.txt were read into tables with "Test" prefixes.
 The test Subjects and Labels tables were combined with Test data. The first two columns of the data set has the Subject and Activity measurements.
