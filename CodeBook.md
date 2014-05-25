@@ -3,10 +3,18 @@ Study design
 The datasets for this course project are from the UCI Machine Learning Repository on the Human Activity Recognition Using Smartphones study: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
 Where:
+
 X_test.txt is the Test dataset
 y_test.txt contains the Test labels (activity)
 subject_test.txt contains the subjects who performed the activity
+
+X_train.txt is the Training dataset
+y_train.txt contains the Training labels (activity)
+subject_train.txt contains the subjects who performed the activity
+
 features.txt contains feature information
+
+
 
 Data Set Information (from the UCI web site):
 
