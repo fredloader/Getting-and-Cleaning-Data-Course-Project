@@ -20,6 +20,8 @@ Extractions were performed only on the mean and standard deviation for each meas
 
 Upon inspection, column names with "MeanFreq()" were copied over. So, these columns were dropped. We then used descriptive activity names to name the activities in the data set ("STANDING", etc.) The ActCode (for "Activity Code") column was dropped, too, as we now have a descriptive Activity column.
 
+In order to label the data set with descriptive activity names, I searched for the following abbreviated terms and made descriptive changes: "Acc", "Mag" and "Gyro" were changed to "Acceleration", "Magnitude" and "Gyroscope"
+
 Lastly, a second, independent tidy data set with the average of each variable for each activity and each subject was created with the use of the "reshape2" library. The data set was "melt" and the Subject and Activity columns were defined as ID variables. "dcast" was then used afterwards to get the aggregates for the mean values for each subject and each activity.
 
 The tidy data set was then written to a text file.
