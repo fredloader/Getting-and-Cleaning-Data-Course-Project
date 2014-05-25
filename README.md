@@ -26,7 +26,7 @@ On lines 75 - 85, I then used descriptive activity names to name the activities 
 On lines, 89 -91, I searched for the following abbreviated terms and made descriptive changes:
 "Acc", "Mag" and "Gyro" were changed to "Acceleration", "Magnitude" and "Gyroscope"
 
-On lines 95 - 101, we will create a second, independent tidy data set with the average of each variable for each activity and each subject and for this, we will use the "reshape2" library. We will "melt" the data set and set the Subject and Activity  columns as ID variables, then use "dcast" to get the aggregates for the mean values for each subject and each activity.
+On lines 95 - 101, we will create a second, independent tidy data set, tidyData, with the average of each variable for each activity and each subject and for this, we will use the "reshape2" library. We will "melt" the data set and set the Subject and Activity  columns as ID variables, then use "dcast" to get the aggregates for the mean values for each subject and each activity.
 
 On line 104, the last step is to write the "tidy" data set to a text file.
 
