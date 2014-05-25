@@ -22,6 +22,77 @@ Upon inspection, column names with "MeanFreq()" were copied over. So, these colu
 
 In order to label the data set with descriptive activity names, I searched for the following abbreviated terms and made descriptive changes: "Acc", "Mag" and "Gyro" were changed to "Acceleration", "Magnitude" and "Gyroscope"
 
-Lastly, a second, independent tidy data set with the average of each variable for each activity and each subject was created with the use of the "reshape2" library. The data set was "melt" and the Subject and Activity columns were defined as ID variables. "dcast" was then used afterwards to get the aggregates for the mean values for each subject and each activity.
+Lastly, a second, independent tidy data set, tidyData, with the average of each variable for each activity and each subject was created with the use of the "reshape2" library. The data set was "melt" and the Subject and Activity columns were defined as ID variables. "dcast" was then used afterwards to get the aggregates for the mean values for each subject and each activity.
 
 The tidy data set was then written to a text file.
+
+tidyData Structure:
+
+   Subject                                  : num
+   Activity                                 : chr
+   tBodyAcceleration-mean()-X               : num
+   tBodyAcceleration-mean()-Y               : num
+   tBodyAcceleration-mean()-Z               : num
+   tGravityAcceleration-mean()-X            : num
+   tGravityAcceleration-mean()-Y            : num
+   tGravityAcceleration-mean()-Z            : num
+   tBodyAccelerationJerk-mean()-X           : num
+   tBodyAccelerationJerk-mean()-Y           : num
+   tBodyAccelerationJerk-mean()-Z           : num
+   tBodyGyroscope-mean()-X                  : num
+   tBodyGyroscope-mean()-Y                  : num
+   tBodyGyroscope-mean()-Z                  : num
+   tBodyGyroscopeJerk-mean()-X              : num
+   tBodyGyroscopeJerk-mean()-Y              : num
+   tBodyGyroscopeJerk-mean()-Z              : num
+   tBodyAccelerationMagnitude-mean()        : num
+   tGravityAccelerationMagnitude-mean()     : num
+   tBodyAccelerationJerkMagnitude-mean()    : num
+   tBodyGyroscopeMagnitude-mean()           : num
+   tBodyGyroscopeJerkMagnitude-mean()       : num
+   fBodyAcceleration-mean()-X               : num
+   fBodyAcceleration-mean()-Y               : num
+   fBodyAcceleration-mean()-Z               : num
+   fBodyAccelerationJerk-mean()-X           : num
+   fBodyAccelerationJerk-mean()-Y           : num
+   fBodyAccelerationJerk-mean()-Z           : num
+   fBodyGyroscope-mean()-X                  : num
+   fBodyGyroscope-mean()-Y                  : num
+   fBodyGyroscope-mean()-Z                  : num
+   fBodyAccelerationMagnitude-mean()        : num
+   fBodyBodyAccelerationJerkMagnitude-mean(): num
+   fBodyBodyGyroscopeMagnitude-mean()       : num
+   fBodyBodyGyroscopeJerkMagnitude-mean()   : num
+   tBodyAcceleration-std()-X                : num
+   tBodyAcceleration-std()-Y                : num
+   tBodyAcceleration-std()-Z                : num
+   tGravityAcceleration-std()-X             : num
+   tGravityAcceleration-std()-Y             : num
+   tGravityAcceleration-std()-Z             : num
+   tBodyAccelerationJerk-std()-X            : num
+   tBodyAccelerationJerk-std()-Y            : num
+   tBodyAccelerationJerk-std()-Z            : num
+   tBodyGyroscope-std()-X                   : num
+   tBodyGyroscope-std()-Y                   : num
+   tBodyGyroscope-std()-Z                   : num
+   tBodyGyroscopeJerk-std()-X               : num
+   tBodyGyroscopeJerk-std()-Y               : num
+   tBodyGyroscopeJerk-std()-Z               : num
+   tBodyAccelerationMagnitude-std()         : num
+   tGravityAccelerationMagnitude-std()      : num
+   tBodyAccelerationJerkMagnitude-std()     : num
+   tBodyGyroscopeMagnitude-std()            : num
+   tBodyGyroscopeJerkMagnitude-std()        : num
+   fBodyAcceleration-std()-X                : num
+   fBodyAcceleration-std()-Y                : num
+   fBodyAcceleration-std()-Z                : num
+   fBodyAccelerationJerk-std()-X            : num
+   fBodyAccelerationJerk-std()-Y            : num
+   fBodyAccelerationJerk-std()-Z            : num
+   fBodyGyroscope-std()-X                   : num
+   fBodyGyroscope-std()-Y                   : num
+   fBodyGyroscope-std()-Z                   : num
+   fBodyAccelerationMagnitude-std()         : num
+   fBodyBodyAccelerationJerkMagnitude-std() : num
+   fBodyBodyGyroscopeMagnitude-std()        : num
+   fBodyBodyGyroscopeJerkMagnitude-std()    : num
