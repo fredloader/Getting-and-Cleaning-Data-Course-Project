@@ -1,12 +1,18 @@
 ## run_analysis.R: This is the script we will run for the project
 
-## We will work on the Test datasets 
+## We will work on the Test and Training datasets 
 ## Where:
 ## 		X_test.txt is the Test dataset
 ## 		y_test.txt contains the Test labels (activity)
 ## 		subject_test.txt contains the subjects who performed the activity
+##
+##		
+## 		X_train.txt is the Training dataset
+##		y_train.txt contains the Training labels (activity)
+##		subject_train.txt contains the subjects who performed the activity
+##
 ## 		features.txt contains feature information
-
+##
 ## Let's read in the feature names first as we will use it for both the Test and Training sets
 Features <- read.table("features.txt", header = FALSE, colClasses = "character")
 
@@ -78,7 +84,7 @@ ActNames <- c("ActCode","Activity")
 Activity <- read.table("activity_labels.txt", header = FALSE, colClasses = "character", col.names = ActNames )
 ## Merge the data sets to create a new, descriptive column "Activity"
 MyDataMerge <- merge(MyData1, Activity, by.x="ActCode", by.y="ActCode")
-## Let's drop the ActCode column,
+## Let's drop the ActCode column since we already have descriptive activity labels
 MyDataMerge$ActCode <- NULL
 ## and move the "Activity" column from last to first
 ColIndex <- grep("Activity", names(MyDataMerge))
